@@ -1,5 +1,5 @@
-#ifndef _X_H_
-#define _X_H_
+#ifndef _LEASE_MANAGER_H_
+#define _LEASE_MANAGER_H_
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -7,11 +7,8 @@
 #include <errno.h>
 #include <string.h>
 
-#include <xcb/xcb.h>
+/* #include <xcb/xcb.h> */
 #include <xcb/randr.h>
-
-#include <X11/X.h>
-#include <X11/Xlib.h>
 
 struct leaseManager {
     xcb_connection_t *connection;
@@ -22,4 +19,4 @@ int createLease(struct leaseManager *lm);
 
 void revokeLease(struct leaseManager *lm);
 
-#endif /*_X_H_*/
+#endif /*_LEASE_MANAGER_H_*/

@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "lease_manager.h": "c",
+        "xcb.h": "c",
+        "x.h": "c",
+        "randr.h": "c"
+    }
+}

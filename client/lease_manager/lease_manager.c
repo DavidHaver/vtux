@@ -1,16 +1,4 @@
-#include "x.h"
-
-#include <X11/Xlib.h>
-#include <X11/extensions/Xrandr.h>
-#include <X11/extensions/randr.h>
-
-/*
-int createLease(struct leaseManager *lm) {
-    Display *display = XOpenDisplay(NULL);
-    
-}
-*/
-
+#include "lease_manager.h"
 
 int createLease(struct leaseManager *lm) {
     int ret = 0;

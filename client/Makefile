@@ -13,17 +13,17 @@ DRM_LIB=-ldrm
 vtux: main.c
 	$(CC) $(CFLAGS) $(DRM_INC) -o vtux main.c $(DRM_LIB)
 
-#vtux: main.o libx.so
-#	$(CC) $(CFLAGS) -o vtux $(OOBJ)/main.o ./$(OLIB)/libx.so
+#vtux: main.o libleasemanager.so
+#	$(CC) $(CFLAGS) -o vtux $(OOBJ)/main.o ./$(OLIB)/libleasemanager.so
 #
 #main.o: out main.c 
 #	$(CC) $(CFLAGS) $(DFLAGS) main.c -c -o $(OOBJ)/main.o $(DRMFLAGS)
 #
-#libx.so: out x.o
-#	$(CC) -shared -o $(OLIB)/libx.so $(OOBJ)/x.o $(XFLAGS)
+#libleasemanager.so: out lease_manager.o
+#	$(CC) -shared -o $(OLIB)/libleasemanager.so $(OOBJ)/lease_manager.o $(XFLAGS)
 #
-#x.o: out x/x.h x/x.c
-#	$(CC) -fPIC $(CFLAGS) x/x.c -c -o $(OOBJ)/x.o
+#lease_manager.o: out lease_manager/lease_manager.h lease_manager/lease_manager.c
+#	$(CC) -fPIC $(CFLAGS) lease_manager/lease_manager.c -c -o $(OOBJ)/lease_manager.o
 #
 #out:
 #	mkdir -p $(OLIB) $(OOBJ)

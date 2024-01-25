@@ -3,6 +3,7 @@
         "lease_manager.h": "c",
         "xcb.h": "c",
         "x.h": "c",
-        "randr.h": "c"
+        "randr.h": "c",
+        "string.h": "c"
     }
 }
